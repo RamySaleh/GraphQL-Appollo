@@ -1,0 +1,26 @@
+{
+  "name": "GraphQL-Appollo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon -e js,json,graphql"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RamySaleh/GraphQL-Appollo.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RamySaleh/GraphQL-Appollo/issues"
+  },
+  "homepage": "https://github.com/RamySaleh/GraphQL-Appollo#readme",
+  "dependencies": {
+    "apollo-server": "^2.15.0",
+    "graphql": "^15.1.0",
+    "nodemon": "^2.0.4"
+  }
+}
