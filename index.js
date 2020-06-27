@@ -3,11 +3,23 @@ const { ApolloServer } = require("apollo-server");
 let photos = [];
 
 const typeDefs = `
-    type Query {
-        totalPhotos: Int!
+  # 1. Add Photo type definition
+    type Photo {
+      id: ID!
+      url: String!
+      name: String!
+      description: String
     }
+
+  # 2. Return Photo from allPhotos
+    type Query {
+      totalPhotos: Int!
+      allPhotos: [Photo!]!
+    }
+
+  # 3. Return the newly posted photo from the mutation
     type Mutation {
-        postPhoto(name: String! description: String): Boolean!
+      postPhoto(name: String! description: String): Photo!
     }
 `;
 
